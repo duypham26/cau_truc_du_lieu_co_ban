@@ -72,7 +72,7 @@ void chen_truc_tiep(int a[],int n)
             a[pos+1]= a[pos];
             pos--;
         }
-        a[pos++];
+        a[pos+1];
         i++;
     }
     
@@ -87,7 +87,7 @@ void sap_xep_bong_bong(int a[], int n)
         {
             if (a[j]<a[j-1])
             {
-                doi_cho(a[j],a[i]);
+                doi_cho(a[j],a[j-1]);
             }
         }
     }
@@ -103,7 +103,7 @@ void sap_xep_nhanh(int a[], int left, int right)
         while (a[i]<x){i++;}
         while (a[j]>x){j--;}
         if(i<=j){doi_cho(a[i],a[j]);i++;j--;}
-    } while (i<j);
+    } while (i<=j);
     if(left < j){sap_xep_nhanh(a,left,j);}
     if(right > i){sap_xep_nhanh(a,i,right);}
     
@@ -129,7 +129,7 @@ void sap_xep_nhanh(int a[], int left, int right)
 int main()
 {
     int a[] = {12,3,4,22,34,72};
-    sap_xep_nhanh(a,0,5);
+    sap_xep_bong_bong(a,6);
     for (int i = 0; i < 6 ;i++)
     {
         cout<<a[i]<<' ';

@@ -194,3 +194,15 @@ int main()
     cout<<"_________________________"<<endl;
     duyet_danh_sach(danh_sach);
 }
+/*ứng dụng của danh sách liên kết: 
+- lý thuyết:
+    + cấu trúc dữ liệu động: quản lý bộ nhớ linh hoạt, ko cần cấp phát kích thước cố định như mảng. thích hợp cho các tình huống số lượng phần tử thay đổi thường xuyên
+    + cài đặt các cấu trúc dữ liệu khác: stack(ngăn xếp), queue (hàng đợi), hash table (bảng băm),...
+    + cấu trúc nâng cao: ds liên kết vòng/kép
+- thực tế: 
+    + quản lý bộ nhớ, hệ điều hành
+    + ứng dụng văn bản, soạn thảo
+    + hệ thống đa phương tiện
+    thuật toán và đồ 
+
+*/
